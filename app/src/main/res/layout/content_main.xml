@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    >
+
+    <Button android:id="@+id/redButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/persion_1"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#FF0000"
+        android:layout_alignParentLeft="true"/>
+
+    <Button android:id="@+id/greenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BUtton_2"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#008000"
+        android:layout_below="@+id/redButton"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView android:id="@+id/midleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="this is middle"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/greenButton"
+        />
+
+    <TextView android:id="@+id/rightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/this_is_right"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_toRightOf="@id/midleText"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/greenButton"
+        />
+
+    <TextView android:id="@+id/leftText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="this is left"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_toLeftOf="@id/midleText"
+        android:paddingRight="15dp"
+        android:layout_below="@+id/greenButton"
+        />
+
+
+    <Button android:id="@+id/blueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Persion #3"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#0000FF"
+        android:layout_below="@id/rightText"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>
